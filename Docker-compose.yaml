@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  login-service:
+    build: ./login-service
+    ports:
+      - "5000:5000"
+  product-service:
+    build: ./product-service
+    ports:
+      - "5001:5001"
+  order-service:
+    build: ./order-service/demo
+    ports:
+      - "5002:5002"
